@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 # Production Config from
 # https://github.com/albirrkarim/mozilla-hubs-installation-detailed
