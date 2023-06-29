@@ -63,7 +63,7 @@ config :ret, Ret.Locking,
   lock_timeout_ms: 1000 * 60 * 15,
   session_lock_db: [
     username: "postgres",
-    password: "postgres",
+    password: "Pp232400!!",
     database: db_name,
     hostname: "localhost"
   ]
