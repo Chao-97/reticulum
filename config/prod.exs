@@ -177,7 +177,7 @@ config :ret, Ret.Speelycaptor,
   speelycaptor_endpoint: "https://1dhaogh2hd.execute-api.us-west-1.amazonaws.com/public"
 
 asset_hosts =
-  "https://localhost:4000 https://localhost:8080 " <>
+  "https://localhost:4000 https://localhost:8080 http://localhost:3000" <>
     "https://#{host} https://#{host}:4000 https://#{host}:8080 https://#{host}:3000 https://#{host}:8989 https://#{host}:9090 https://#{cors_proxy_host}:4000 " <>
     "https://assets-prod.reticulum.io https://asset-bundles-dev.reticulum.io https://asset-bundles-prod.reticulum.io"
 
