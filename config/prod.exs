@@ -20,8 +20,8 @@ link_host = "hubs-link.local"
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :ret, RetWeb.Endpoint,
-  url: [scheme: "https", host: host, port: 4000],
-  static_url: [scheme: "https", host: host, port: 4000],
+  url: [scheme: "https", host: host, port: 443],
+  static_url: [scheme: "https", host: host, port: 443],
   https: [
     port: 4000,
     otp_app: :ret,
@@ -29,9 +29,9 @@ config :ret, RetWeb.Endpoint,
     keyfile: "/etc/letsencrypt/live/#{host}/privkey.pem",
     certfile: "/etc/letsencrypt/live/#{host}/cert.pem"
   ],
-  cors_proxy_url: [scheme: "https", host: cors_proxy_host, port: 4000],
-  assets_url: [scheme: "https", host: assets_host, port: 4000],
-  link_url: [scheme: "https", host: link_host, port: 4000],
+  cors_proxy_url: [scheme: "https", host: cors_proxy_host, port: 443],
+  assets_url: [scheme: "https", host: assets_host, port: 443],
+  link_url: [scheme: "https", host: link_host, port: 443],
   imgproxy_url: [scheme: "http", host: host, port: 5000],
   debug_errors: true,
   # this is important
