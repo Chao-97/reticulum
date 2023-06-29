@@ -4,7 +4,7 @@ import Config
 # https://github.com/albirrkarim/mozilla-hubs-installation-detailed
 
 # Change this
-host = "hub.lookfoto.cc"
+host = "hubs.lookfoto.cc"
 db_name = "ret_dev"
 storage_outside_github_workflow = "/home/admin/app/reticulum/storage"
 
