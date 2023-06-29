@@ -27,11 +27,11 @@ case config_env() do
       session_lock_db: [
         database: "ret_dev",
         hostname: db_hostname,
-        password: "postgres",
+        password: "Pp232400!!",
         username: "postgres"
       ]
 
-    config :ret, Ret.PermsToken, perms_key:  "-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQCflBBAL5NKsXoEr6bcnMOdqoVaspg8Do2uDQJoNAEFLV8HWIz+\nYYQhSgsVDD5qowrN16aq0NA6v4f2bFqzpgPndyBhExYdF9zOnp6b7uR7ak2ipujJ\nACusQx7mU/PMAKAnfDDdyOhZuj0O2MUzyfbsAB19OtFuf3upLIRQo1jLRQIDAQAB\nAoGAeHsJaeyBgDtOrIsRqC6TYk6EMF32oiE6xtX7o0DgJFCFFr68dLKbV6bXhySf\nW1ONrKvModrV3AUPWfWk5U3KU5XwDEG/bweKqD9qnDdJIlPH+yv095Q+i3DzikFw\neZS8f22ZNyVxudsr74ekql18yhhCQmAKHJ6C/uQg1odl/wECQQD/lWwpomxZ+BVo\nNI8BOCps8vhyLyoHYXKH/YlvnCDjD5pSKWxY66CmO2m+ccZ/cTy4dRMhKW0vezgp\nF2l7bMCJAkEAn9abapzJf6IrMO+ZRg4ySz0zRVJqkLPgVIdVFbUHmKDhDUJmZKRG\ncU/b4qJOht+2CrVlvgk1DB+UnRwNuwqt3QJBAJURQZTG9wtCdrngbcf4SkZhMCbo\n+0pyu6o1ZgOCvGuynf9tyZPTWk+aN4KsOWn7Ub8ECbQ9xUD8TTUqQouKUoECQEOs\nFeL+fKVIIKc4Whl5+zs1rxZjfXDEZ28CWTi2i3/IZWA6w6VKk/R3ji4W785Uuvsv\nr+LUfRwj5sTZ0splDBUCQQCHMAfq/lhe2Ku62hVNDu7NRzxYHmZu61YHggnqZnZT\nWID2aVCHJxPLkXDGUvA3+Jh9JfPiczw4S7Rjd//URydX\n-----END RSA PRIVATE KEY-----"
+    config :ret, Ret.PermsToken, perms_key: "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCtzZwdkJCD95+YAsyB49X5YFTocikPRAQvSuAsaUixMHJsSDW9\nr/Xfd0h8g/WQyRRkTjbbIVwzULfCU2awjNjPK9+9iHewQzqTwJiWLTTUl8JAdVXk\nbDuDU21XYc9j+3bcxxZKfmwJjXBzkXc0AO6q0XJT+pwMaqV7+lzDEdfaLQIDAQAB\nAoGAGV0UF0xtipSseaaO6bWyGD5ypaljTJMEeVJX/KMwtIr5Z8vx68it/PqPXXx0\nbbiqfSjc4IWxyttQtc8uAT3MtdBvBiAN6GempHiupdCZ7CSSG4e3D4Yvkip0QCOd\nqiSiAGbnq97u2Sc85PDpKPjqfX+TKil6dw9HT+gYDeHzbpECQQD+ZvqsVti+/1jY\n9XBmgctnpNPABXnayxsjPJA78gsEoV1fptKWwrBkrFjxqduBUpbUeOoYwEa6mF16\nOU5a85UHAkEAruULsN8yYCzFylL+ZSrTRBOSWPO3MhDJI0cV9CMAduI2Cb+x+SXd\nwshGXeYilm35YUeG4WnWV/pMBTmsVhEeKwJAcRPA1B1+FddV3ImrvkRu7tCatj04\n3oFsvIrM6Xg6YYKACGYUMKK02OqqVjBTuvXEyQg9tWaxiXr0AcG7DD48vQJARQ5x\nWEw44tqq2mF8y0tmkcm8jlzk5+LS2JgX5gbwBwD4306Oola+Qku75RWacJVJ04xf\niJ+2n5RX8fQ8xNsLcwJAXI6FVu+1ihttzNaXl9UYQiQOHmvtbb/xqYUCaIVmw/Yi\nXcSi3pENA6dka5C4hQlE8M6eArfxBvagRzGlrdqsGQ==\n-----END RSA PRIVATE KEY-----"
 
     config :ret, Ret.PageOriginWarmer,
       admin_page_origin: "https://#{hubs_admin_internal_hostname}:8989",
