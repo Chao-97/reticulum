@@ -201,6 +201,7 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://fonts.gstatic.com",
         "https://uploads-prod.reticulum.io",
         "wss://hubs.lookfoto.cc/socket/websocket?vsn=2.0.0",
+        "http://hubs.lookfoto.cc:3333",
         assets_url,
         cors_proxy_url,
         custom_rules[:connect_src],
