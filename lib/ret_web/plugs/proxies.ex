@@ -5,10 +5,8 @@ defmodule RetWeb.Plugs.PostgrestProxy do
 
   @spec call(Plug.Conn.t(), []) :: Plug.Conn.t()
   def call(conn, []) do
-    IO.puts("hostname:",hostname())
     opts = ReverseProxyPlug.init(upstream: "http://#{hostname()}:3000")
     # opts = ReverseProxyPlug.init(upstream: "http://localhost:3000")
-    IO.puts("opts:",opts)
     ReverseProxyPlug.call(conn, opts)
   end
 
