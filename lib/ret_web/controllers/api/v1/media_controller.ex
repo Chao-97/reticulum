@@ -190,7 +190,16 @@ defmodule RetWeb.Api.V1.MediaController do
   defp render_resolved_media_or_error(conn, {_status, :forbidden}) do
     send_resp(conn, 403, "Forbidden")
   end
+  # This is an error response that we have cached ourselves
+  defp render_resolved_media_or_error(conn, {_status, :error}) do
+    # DON'T THROW ERROR
+    url = conn.params["media"]["url"]
+    content_type = MIME.from_path(url)
+    resolved_media = URI.parse(url) |> Ret.MediaResolver.resolved(%{expected_content_type: content_type})
 
+    render_resolved_media(conn, resolved_media)
+    # send_resp(conn, 500, "An error occured during media resolution")
+  end
   # This is an error response that we have cached ourselves
   defp render_resolved_media_or_error(conn, {_status, :error}) do
     send_resp(conn, 500, "An error occured during media resolution")

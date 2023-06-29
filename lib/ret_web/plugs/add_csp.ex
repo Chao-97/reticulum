@@ -105,10 +105,14 @@ defmodule RetWeb.Plugs.AddCSP do
     # TODO: The https janus port CSP rules (including the default) can be removed after dialog is deployed,
     # since they are used to snoop and see what SFU it is.
     default_janus_csp_rule =
-      if default_janus_host != nil && String.length(String.trim(default_janus_host)) > 0,
-        do:
-          "wss://#{default_janus_host}:#{janus_port} https://#{default_janus_host}:#{janus_port}",
-        else: ""
+      # if default_janus_host != nil && String.length(String.trim(default_janus_host)) > 0,
+      #   do:
+      #     "wss://#{default_janus_host}:#{janus_port} https://#{default_janus_host}:#{janus_port}",
+      #   else: ""
+      default_janus_csp_rule =
+        if default_janus_host,
+           do: "wss://#{default_janus_host}:#{janus_port} https://#{default_janus_host}:#{janus_port} https://#{default_janus_host}:#{janus_port}/meta",
+           else: ""
 
     ret_direct_connect =
       if is_subdomain do
@@ -142,9 +146,13 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://ssl.google-analytics.com",
         "https://www.google-analytics.com",
         "https://www.youtube.com",
+        "https://nearspark-dev.reticulum.io",
         assets_url,
         custom_rules[:script_src],
         storage_url
+      ],
+      "prefetch-src" => [
+        custom_rules[:script_src],
       ],
       "child-src" => [
         "'self'",
@@ -164,6 +172,7 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://cdn.jsdelivr.net",
         "https://fonts.googleapis.com",
         "https://fonts.gstatic.com",
+        "https://at.alicdn.com",
         assets_url,
         cors_proxy_url,
         custom_rules[:font_src],
@@ -190,6 +199,8 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://www.google-analytics.com",
         "https://www.youtube.com",
         "https://fonts.gstatic.com",
+        "https://uploads-prod.reticulum.io",
+        "wss://hubs.lookfoto.cc/socket/websocket?vsn=2.0.0",
         assets_url,
         cors_proxy_url,
         custom_rules[:connect_src],
@@ -208,6 +219,7 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://user-images.githubusercontent.com",
         "https://www.google-analytics.com",
         "https://www.youtube.com",
+        "https://nearspark-dev.reticulum.io",
         assets_url,
         cors_proxy_url,
         custom_rules[:img_src],

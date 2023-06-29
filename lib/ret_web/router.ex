@@ -95,10 +95,10 @@ defmodule RetWeb.Router do
   end
 
   scope "/api/postgrest" do
-    if(Mix.env() == :prod) do
-      pipe_through([:secure_headers])
-    end
-  
+    # if(Mix.env() == :prod) do
+    #   pipe_through([:secure_headers])
+    # end
+
     forward("/", RetWeb.Plugs.PostgrestProxy)
   end
 
