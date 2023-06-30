@@ -173,7 +173,6 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://fonts.googleapis.com",
         "https://fonts.gstatic.com",
         "https://at.alicdn.com",
-        "data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANUAAsAAAAAB2wAAAMHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDFAqCMIIHATYCJAMQCwoABCAFhG0HRxtwBhEVnDvIfiTYthdSVtaJvphhRZ2kM8ED2dm/we5NcIKq+zSSD6GT0MElwDRAwBz6zc1QP+ULE/WOKbG//PQdaSkrXAjr56+pdwvxfHY2l8qwP4qkAU5wQFFNLbyBDMw3jN1E0BA3QwBOEuQRteo0aoVBA3oJQAzq37c7JuNHo42UQWBXTNRjxRIsjJwrbwGL+ffFG0oyILEUYGCzPrV7Ue259dwoj89DJ4ohmM4KGNNAAXlAg+hWae+AiuJ5FE5vNU0BsNEI5HP7ufH5mJLH9bBNwfb/eBIFwgagbgDK5ISC5xYmIOC5TUDCc4OgAD6GwfA0yVZAH5Uat75AImPCQ4NF93lHIvrs8Oau.../7eK4WvFr83X9nvdt9/K1rpSvY9WYfrvzMuzQaHJSfki82gkYbPiXBBezeva7hOtKcYQD4jugfqh6nb9ELVX7SqyKU5x/8hj/V95Z3Daz0zbg0AA+HiOey1ucdlukBDBI6C954nlUKoH+YIhDTGmgw6h1XjApAkzU4KgEnDIEP4A7xbApleGcUBIbwBCR+xIPCkIZrah5YuCgDG0NVcJKr7nQXoUagENoB5JgpgSDIXpAEcBYUQW7jmvoULCK8A5ugFDgR/LsseHYtnG6MStCC3iAY6h0yyUmkv9FPreK0iNP+yGMIQZ5k+dQLe+QphoyzL0QcOKYOntJ22LYEA1ONRpJKZCjT1FXdKDHURSc3DCkCWUDbgMAgPUdri1Ph82/Im7QUbijpsf8hNgr1g1wi64C/5H2nklu5ZjTzCkI4wGGkA56SFbUwTsBQ3a6GDJGoBkQHpVSp5rrKk+WV3QvkGRWAIToplNDCYjdsr5LDVlmCmOqsmGmJOfhKoggA",
         assets_url,
         cors_proxy_url,
         custom_rules[:font_src],
