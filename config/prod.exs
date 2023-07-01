@@ -38,7 +38,7 @@ config :ret, RetWeb.Endpoint,
   code_reloader: false,
   check_origin: false,
   # This config value is for local development only.
-  secret_key_base: "GjVxp/kSkMcrusIy/sHllfNy4ax34uhlf/nGhcQum7HwMdYTtnuAiFDYaGWag+c4",
+  secret_key_base: "7VoXqD/LifkjzHOzXDs9TDF/s1A79Q0QzFPvasBrRKVyafwtkx6UiwJ+qF0sxCQB",
   allowed_origins: "*",
   allow_crawlers: true
 
@@ -200,7 +200,7 @@ config :ret, Ret.OAuthToken, oauth_token_key: ""
 config :ret, Ret.Guardian,
   issuer: "ret",
   # This config value is for local development only.
-  secret_key: "47iqPEdWcfE7xRnyaxKDLt9OGEtkQG3SycHBEMOuT2qARmoESnhc76IgCUjaQIwX",
+  secret_key: "7VoXqD/LifkjzHOzXDs9TDF/s1A79Q0QzFPvasBrRKVyafwtkx6UiwJ+qF0sxCQB",
   ttl: {12, :weeks}
 
 config :web_push_encryption, :vapid_details,
