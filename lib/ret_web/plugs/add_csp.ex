@@ -221,6 +221,7 @@ defmodule RetWeb.Plugs.AddCSP do
         "https://www.google-analytics.com",
         "https://www.youtube.com",
         "https://nearspark-dev.reticulum.io",
+        "https://thumbnail",
         assets_url,
         cors_proxy_url,
         custom_rules[:img_src],
