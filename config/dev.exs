@@ -38,7 +38,7 @@ config :ret, RetWeb.Endpoint,
   code_reloader: false,
   check_origin: false,
   # This config value is for local development only.
-  secret_key_base: "GjVxp/kSkMcrusIy/sHllfNy4ax34uhlf/nGhcQum7HwMdYTtnuAiFDYaGWag+c4",
+  secret_key_base: "txlMOtlaY5x3crvOCko4uV5PM29ul3zGo1oBGNO3cDXx+7GHLKqt0gR9qzgThxb5",
   allowed_origins: "*",
   allow_crawlers: true
 
@@ -213,7 +213,7 @@ config :sentry,
   json_library: Poison,
   included_environments: [:prod],
   tags: %{
-    env: "prod"
+    env: "dev"
   }
 
 config :ret, Ret.Habitat, ip: "127.0.0.1", http_port: 9631

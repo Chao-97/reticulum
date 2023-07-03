@@ -38,7 +38,7 @@ config :ret, RetWeb.Endpoint,
   code_reloader: false,
   check_origin: false,
   # This config value is for local development only.
-  secret_key_base: "7VoXqD/LifkjzHOzXDs9TDF/s1A79Q0QzFPvasBrRKVyafwtkx6UiwJ+qF0sxCQB",
+  secret_key_base: "txlMOtlaY5x3crvOCko4uV5PM29ul3zGo1oBGNO3cDXx+7GHLKqt0gR9qzgThxb5",
   allowed_origins: "*",
   allow_crawlers: true
 
